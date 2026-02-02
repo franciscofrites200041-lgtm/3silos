@@ -25,7 +25,7 @@
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#espacio" class="nav-link">El Espacio</a></li>
                 <li><a href="#servicios" class="nav-link">Servicios</a></li>
-                <li><a href="#galeria" class="nav-link">Galería</a></li>
+                <li><a href="#momentos" class="nav-link">Momentos</a></li>
                 <li><a href="#contacto" class="nav-link nav-cta">Consultar</a></li>
             </ul>
             <button class="nav-toggle" id="nav-toggle" aria-label="Menú">
@@ -41,37 +41,73 @@
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
-            <span class="hero-eyebrow">3 Silos Eventos</span>
             <h1 class="hero-title">El escenario perfecto para tu celebración</h1>
             <p class="hero-subtitle">Salón para 200 personas con espacios exteriores, equipamiento completo y la
                 flexibilidad que tu evento necesita.</p>
             <a href="#contacto" class="btn btn-primary">Consultar disponibilidad</a>
         </div>
+        <div class="hero-scroll">
+            <span>Explorá</span>
+            <div class="scroll-line"></div>
+        </div>
     </header>
+
+    <!-- Números destacados -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="200">0</span>
+                    <span class="stat-label">Capacidad de personas</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="1000">0</span>
+                    <span class="stat-suffix">m²</span>
+                    <span class="stat-label">de espacios verdes</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="45">0</span>
+                    <span class="stat-label">lugares de estacionamiento</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- El Espacio -->
     <section class="espacio" id="espacio">
         <div class="espacio-intro">
             <div class="container">
-                <div class="intro-content">
-                    <span class="section-label">El Espacio</span>
-                    <h2>Un salón versátil para cada tipo de evento</h2>
-                    <p>3 Silos ofrece un salón principal climatizado con capacidad para 200 personas, complementado por
-                        más de 1.000 m² de espacios exteriores. Bodas, cumpleaños, eventos corporativos o cualquier
-                        celebración encuentra aquí su lugar.</p>
+                <div class="intro-grid">
+                    <div class="intro-content">
+                        <span class="section-label">El Espacio</span>
+                        <h2>Un salón versátil para cada tipo de evento</h2>
+                    </div>
+                    <div class="intro-text">
+                        <p>3 Silos ofrece un salón principal climatizado con capacidad para 200 personas, complementado
+                            por más de 1.000 m² de espacios exteriores. Bodas, cumpleaños, eventos corporativos o
+                            cualquier celebración encuentra aquí su lugar.</p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="espacio-gallery">
-            <figure class="gallery-item gallery-item-main">
+            <figure class="gallery-item gallery-item-main" data-parallax>
                 <img src="476237763_646425311072261_3087647599929620226_n.jpg" alt="Vista del salón y jardines"
                     loading="lazy">
-                <figcaption>Vista exterior con jardines y acceso al salón principal</figcaption>
+                <figcaption>
+                    <span class="caption-title">Jardines y acceso principal</span>
+                    <span class="caption-desc">Vista exterior con palmeras y amplio parquizado</span>
+                </figcaption>
             </figure>
-            <figure class="gallery-item">
+            <figure class="gallery-item" data-parallax>
                 <img src="WhatsApp-Image-2025-04-25-at-11.24.34-1.jpeg" alt="Espacios de relax" loading="lazy">
-                <figcaption>Áreas de descanso al aire libre</figcaption>
+                <figcaption>
+                    <span class="caption-title">Áreas lounge</span>
+                    <span class="caption-desc">Espacios al aire libre para tus invitados</span>
+                </figcaption>
             </figure>
         </div>
     </section>
@@ -86,18 +122,35 @@
 
             <div class="servicios-content">
                 <div class="servicios-column">
-                    <h3>Infraestructura</h3>
+                    <div class="column-header">
+                        <div class="column-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Infraestructura</h3>
+                    </div>
                     <ul class="servicios-list">
                         <li>Salón climatizado para 200 personas</li>
                         <li>Más de 1.000 m² de parquizado</li>
-                        <li>Playa de estacionamiento (45 vehículos)</li>
+                        <li>Estacionamiento para 45 vehículos</li>
                         <li>WiFi de alta velocidad</li>
-                        <li>Baños equipados con cambiador para bebés</li>
+                        <li>Baños equipados con cambiador</li>
                     </ul>
                 </div>
 
                 <div class="servicios-column">
-                    <h3>Seguridad</h3>
+                    <div class="column-header">
+                        <div class="column-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3>Seguridad</h3>
+                    </div>
                     <ul class="servicios-list">
                         <li>Cámaras de vigilancia</li>
                         <li>Guardia de seguridad</li>
@@ -107,12 +160,20 @@
                 </div>
 
                 <div class="servicios-column">
-                    <h3>Equipamiento gastronómico</h3>
+                    <div class="column-header">
+                        <div class="column-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <h3>Equipamiento gastronómico</h3>
+                    </div>
                     <ul class="servicios-list">
                         <li>Churrasquera profesional</li>
                         <li>Horno de barro</li>
                         <li>Horno pizzero y hornallas</li>
-                        <li>Fogonero</li>
+                        <li>Fogonero exterior</li>
                         <li>Barra interior y exterior</li>
                         <li>Freezer y heladera</li>
                     </ul>
@@ -121,20 +182,46 @@
         </div>
     </section>
 
-    <!-- Galería / Gastronomía -->
-    <section class="galeria" id="galeria">
-        <div class="galeria-split">
-            <div class="galeria-image">
-                <img src="WhatsApp-Image-2025-04-25-at-11.24.35.jpeg" alt="Asado tradicional" loading="lazy">
+    <!-- Momentos / Galería -->
+    <section class="momentos" id="momentos">
+        <div class="momentos-header">
+            <div class="container">
+                <span class="section-label section-label-light">Momentos</span>
+                <h2>Donde cada celebración se vuelve inolvidable</h2>
             </div>
-            <div class="galeria-text">
-                <span class="section-label">Gastronomía</span>
-                <h2>Equipados para cualquier propuesta culinaria</h2>
-                <p>Desde un asado tradicional hasta catering gourmet. Nuestro equipamiento permite que cualquier
-                    servicio gastronómico trabaje con total comodidad. Churrasquera profesional, horno de barro,
-                    fogonero y una cocina completamente equipada.</p>
-                <p class="text-secondary">Trabajamos con caterings de tu elección o podemos recomendarte opciones.</p>
+        </div>
+        <div class="momentos-gallery">
+            <div class="momento-item momento-large">
+                <img src="WhatsApp-Image-2025-04-25-at-11.24.32.jpeg" alt="Ceremonia" loading="lazy">
+                <div class="momento-overlay">
+                    <span>Ceremonias</span>
+                </div>
             </div>
+            <div class="momento-item">
+                <img src="WhatsApp-Image-2025-04-25-at-11.24.35.jpeg" alt="Gastronomía" loading="lazy">
+                <div class="momento-overlay">
+                    <span>Gastronomía</span>
+                </div>
+            </div>
+            <div class="momento-item">
+                <img src="WhatsApp-Image-2025-04-25-at-11.24.34-1.jpeg" alt="Atardecer" loading="lazy">
+                <div class="momento-overlay">
+                    <span>Atardeceres</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-background">
+            <img src="WhatsApp-Image-2025-04-25-at-11.24.35.jpeg" alt="Asado" loading="lazy">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container cta-content">
+            <h2>¿Tenés una fecha en mente?</h2>
+            <p>Consultanos disponibilidad y empezá a planificar tu evento</p>
+            <a href="#contacto" class="btn btn-white">Contactar ahora</a>
         </div>
     </section>
 
@@ -201,7 +288,7 @@
                 <nav class="footer-nav">
                     <a href="#espacio">El Espacio</a>
                     <a href="#servicios">Servicios</a>
-                    <a href="#galeria">Galería</a>
+                    <a href="#momentos">Momentos</a>
                     <a href="#contacto">Contacto</a>
                 </nav>
             </div>
